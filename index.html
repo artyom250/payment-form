@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment Form</title>
+
+    <!-- Boxicons CSS -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    <!-- CSS -->
+     <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Form -->
+     <form style="text-align: center;">
+        <a href="index.html" class="logo">Transactflow</a>
+
+        <p class="heading">Payment <br>in Transactflow</p>
+
+        <div class="inputs">
+
+            <!-- Number -->
+            <div class="field">
+                <div class="card">
+                    <input type="text" id="card-number" maxlength="19" placeholder="Card number" required>
+                    <span>Card number</span>
+                </div>
+                <div class="card-image">
+                    <img src="./images/visa.png" alt="visa">
+                    <img src="./images/master.png" alt="master">
+                </div>
+            </div>
+
+            <!-- Name -->
+            <div class="field">
+                <div class="card">
+                    <input type="text" placeholder="Cardholder name" required>
+                    <span>Cardholder name</span>
+                </div>
+            </div>
+
+            <div class="inputs2">
+
+                <!-- Expiry date -->
+                <div class="field">
+                    <div class="card">
+                        <input type="text" id="expiry-date" maxlength="5" placeholder="Expiry date" required>
+                        <span>Expiry date</span>
+                    </div>
+                </div>
+
+                <!-- CVV -->
+                <div class="field">
+                    <div class="card">
+                        <input type="password" maxlength="3" placeholder="CVV" required>
+                        <span>CVV</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Receipe -->
+            <div class="check">
+                <div class="box" style="display: flex; position: relative;">
+                    <i class='bx bx-check'></i>
+                    <input type="checkbox" id="check" onclick="checkFunc()" required>
+                </div>
+                <p style="color: #d1d5db; font-size: 15px;">Get the receipe</p>
+            </div>
+
+            <!-- Email -->
+            <div class="field" id="email">
+                <div class="card">
+                    <input type="email" placeholder="Email" required>
+                    <span>Email</span>
+                </div>
+            </div>
+
+            <!-- Submit -->
+             <button type="submit">
+                <i class='bx bx-credit-card'></i>
+                <p>Submit</p>
+             </button>
+        </div>
+     </form>
+    
+    <!-- JavaScript -->
+     <script src="script.js"></script>
+</body>
+</html>
