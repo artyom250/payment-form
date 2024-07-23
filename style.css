@@ -184,3 +184,18 @@ button i {
 button:hover {
     background-color: mediumblue;
 }
+
+
+@media(max-width: 550px) {
+    .inputs2 {
+        flex-direction: column;
+    }
+
+    .inputs {
+        width: 100%;
+    }
+
+    body {
+        padding: 50px 30px;
+    }
+}
